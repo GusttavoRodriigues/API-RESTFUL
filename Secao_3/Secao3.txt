@@ -1,0 +1,24 @@
+
+EndPoints.
+Métodos HTTP:
+Os endpoints geralmente são associados a métodos HTTP específicos, como GET, POST, PUT e DELETE.
+O método HTTP utilizado com um endpoint determina a ação a ser executada no recurso.
+Por exemplo, o método GET é usado para recuperar informações, o POST para criar, o PUT para atualizar e o DELETE para excluir.
+ 
+ 
+Um endpoint é a URL onde seu serviço pode ser acessado por uma aplicação cliente.
+
+1-Criando Web API no VS
+2-criar Projeto
+3-Habilitar Open API e usar Controllers
+4-Criar modelo de entidades
+5-Configurar o projeto para usar o EF core e incluir referencias ao EF core
+6-Definir o banco de dados.
+7-Definir a classe de contexto do EF core - AppDbContext
+8-Definir o mapeamento de entidades para a tabelas - DbSet<t>
+9-Registrar o contexto como um serviço - program
+10-Definir a string de conexao no arquivo appsettings.json
+11-Definir o provedor do banco de dados (Pomelo) e obter a string de conexão
+12-Aplicar o Migrations e criar o banco de dados e as tabelas
+13-Criar os controladores : ProdutosController e CategoriasController
+14-Definir os endpoints ou métodos Action para realizar as operações CRUD
