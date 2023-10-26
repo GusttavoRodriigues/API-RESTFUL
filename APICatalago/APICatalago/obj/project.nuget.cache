@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MMPX+fJuuP6SxGZH1cpUd9vXapeMSxYrzaDlhdf+FOjrzRn24OmRbRgi+Y8xgEdZgN23AUmIWIwaTYYigMJXkA==",
+  "dgSpecHash": "ZbklGCHdXljD5lagLSTs5iWGQpC9zVCCnceceYqbSiFdjPjsQAIieqOu31Udbte3shp4wjiEBqQtoMZDSkW0eg==",
   "success": true,
   "projectFilePath": "C:\\Users\\gustavo.silva\\Documents\\Curso_API\\APICatalago\\APICatalago\\APICatalago.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,7 @@
     "C:\\Users\\gustavo.silva\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.13\\microsoft.entityframeworkcore.design.7.0.13.nupkg.sha512",
     "C:\\Users\\gustavo.silva\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.13\\microsoft.entityframeworkcore.relational.7.0.13.nupkg.sha512",
     "C:\\Users\\gustavo.silva\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.13\\microsoft.entityframeworkcore.sqlserver.7.0.13.nupkg.sha512",
+    "C:\\Users\\gustavo.silva\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.13\\microsoft.entityframeworkcore.tools.7.0.13.nupkg.sha512",
     "C:\\Users\\gustavo.silva\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\gustavo.silva\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\gustavo.silva\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",

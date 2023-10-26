@@ -22,3 +22,6 @@ Um endpoint é a URL onde seu serviço pode ser acessado por uma aplicação cli
 12-Aplicar o Migrations e criar o banco de dados e as tabelas
 13-Criar os controladores : ProdutosController e CategoriasController
 14-Definir os endpoints ou métodos Action para realizar as operações CRUD
+
+
+Os controladores são arquivos armazenados
