@@ -2,6 +2,7 @@
 using APICatalago.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace APICatalago.Controllers
 {
@@ -19,9 +20,11 @@ namespace APICatalago.Controllers
 
         //Métodos  Action GET
         [HttpGet]
-        public ActionResult< IEnumerable<Produto>> Get()
+        public ActionResult<IEnumerable<Produto>> Get()
         {
-            var produtos = _context.Produtos.ToList();
+
+            //AsNoTracking leitura dos dados, tendo a certeza que nao tera alteração.
+            var produtos = _context.Produtos.AsNoTracking().ToList();
             if (produtos is null)
             {
                 return NotFound("Produtos não Econtrados");
@@ -30,11 +33,11 @@ namespace APICatalago.Controllers
             {
                 return produtos;
             }
-        
+
         }
 
-        [HttpGet("{id:int}",Name = "ObterProduto")]
-        public ActionResult< Produto> Get(int id)
+        [HttpGet("{id:int}", Name = "ObterProduto")]
+        public ActionResult<Produto> Get(int id)
         {
             var produto = _context.Produtos.FirstOrDefault(x => x.Id == id);
             if (produto is null)
@@ -54,14 +57,14 @@ namespace APICatalago.Controllers
 
             _context.Produtos.Add(produto);
             _context.SaveChanges();
-            
-            return new CreatedAtRouteResult("ObterProduto", new { id = produto.Id},produto);
+
+            return new CreatedAtRouteResult("ObterProduto", new { id = produto.Id }, produto);
         }
 
 
         //PUT Update
         [HttpPut("{id:int}")]
-        public ActionResult Put(int id,Produto produto)
+        public ActionResult Put(int id, Produto produto)
         {
             if (id != produto.Id)
             {
